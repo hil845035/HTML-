@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+func main() {
+//	http.Handle("/search", http.FileServer(http.Dir(".")))
+
+http.HandleFunc("/search", searchHandler)
+
+log.Printf("Serving %s on HTTP port: %s\n", ",", "80")
+log.Fatal(http.ListenAndServe(":80", nil))
+}
+
+func flush(w http.ResponseWriter) {
+f, ok := w.(http.Flusher)
+if ok && f != nil {
+f.Flush()
+}
+
+html, body, h1 {
+padding: 0;
+border: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+display: flex;
+justify-contect: center;
+align-items: center;
+background-image: linear-gardients(red, hyellow, blue);
+height: 100vh;
+
+}
+
+</body>
+    </body>
+    <h1>hello world</h1>
+    </body>
